@@ -2,7 +2,7 @@
 
 import java.util.Hashtable;
 
-public class Library extends Building {
+public class Library extends Building implements LibraryRequirements {
 
     // Attributes
     private Hashtable<String, Boolean> collection; // A collection of books, where the key is the book title and the value is whether it's available or not

@@ -1,7 +1,7 @@
 /* This is a stub for the House class */
 import java.util.ArrayList;
 
-public class House extends Building {
+public class House extends Building implements HouseRequirements {
 
   // Attributes
   private ArrayList<Student> residents;
@@ -86,8 +86,8 @@ public class House extends Building {
     House myHouse = new House("123 Main St", 2, true); // House with a dining room
 
     // Create valid Student objects
-    Student JJ = new Student("JJ", 991234560, 2029);
-    Student Kevin = new Student("Kevin", 991234567, 2008); 
+    Student JJ = new Student("JJ", "991234560", 2029);
+    Student Kevin = new Student("Kevin", "991234567", 2008); 
 
     myHouse.moveIn(JJ);
     myHouse.moveIn(Kevin);

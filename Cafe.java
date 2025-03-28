@@ -1,5 +1,5 @@
 /* This is a stub for the Cafe class */
-public class Cafe extends Building {
+public class Cafe extends Building implements CafeRequirements {
 
     // Attributes
     private int nCoffeeOunces;
