@@ -74,7 +74,7 @@ public class Cafe extends Building implements CafeRequirements {
         
     public static void main(String[] args) {
         // Create a Cafe object
-        Cafe JJsCafe = new Cafe(100, 50, 50, 20, "123 Main St", 1, "JJsCafe");
+        Cafe JJsCafe = new Cafe("JJsCafe", "123 Main St", 1, 100, 50, 50, 20);
 
         // Sell coffee and check restocking behavior
         JJsCafe.sellCoffee(8, 2, 1);

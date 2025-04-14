@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class House extends Building implements HouseRequirements {
 
   // Attributes
-  private ArrayList<String> residents; 
+  private ArrayList<Student> residents; 
   private boolean hasDiningRoom;
 
   // Constructor
@@ -15,9 +15,9 @@ public class House extends Building implements HouseRequirements {
    * @param floors The number of floors in the house.
    * @param hasDiningRoom True if the house has a dining room, false otherwise.
    */
-  public House(String name, String address, int floors, ArrayList<String> residents, boolean hasDiningRoom) {
+  public House(String name, String address, int floors, ArrayList<Student> residents, boolean hasDiningRoom) {
     super(name ,address, floors); // Call the constructor of the Building class
-    this.residents = new ArrayList<>();
+    this.residents = new ArrayList<Student>(); // Initialize the residents list
     this.hasDiningRoom = hasDiningRoom; 
     System.out.println("You have built a house: 🏠");
   }
@@ -83,7 +83,7 @@ public class House extends Building implements HouseRequirements {
 
   public static void main(String[] args) {
 
-    House myHouse = new House("123 Main St", 2, true); // House with a dining room
+    House myHouse = new House("myHouse", "Lincoln Ave", 3, new ArrayList<Student>(), true); // House with a dining room
 
     // Create valid Student objects
     Student JJ = new Student("JJ", "991234560", 2029);
