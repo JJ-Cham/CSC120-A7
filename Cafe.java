@@ -17,8 +17,8 @@ public class Cafe extends Building implements CafeRequirements {
      * @param address       The address of the cafe.
      * @param floors        The number of floors in the cafe building.
      */
-    public Cafe(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups, String address, int floors, String name) {
-        super("JJsCafe", address, floors);
+    public Cafe(String name, String address, int floors, int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
+        super(name , address, floors);
         this.nCoffeeOunces = nCoffeeOunces;
         this.nSugarPackets = nSugarPackets;
         this.nCreams = nCreams;

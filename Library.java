@@ -14,8 +14,8 @@ public class Library extends Building implements LibraryRequirements {
      * @param address    The address of the library.
      * @param floors     The number of floors in the library.
      */
-    public Library(Hashtable<String, Boolean> collection, String address, int floors) {
-        super("JJsLibrary", address, floors); // Call the constructor of the Building class
+    public Library(String name, String address, int floors, Hashtable<String, Boolean> collection) {
+        super(name, address, floors); // Call the constructor of the Building class
         this.collection = new Hashtable<>(); // Initialize the collection with the provided Hashtable
         System.out.println("You have built a library: 📖");
     }
@@ -123,7 +123,7 @@ public class Library extends Building implements LibraryRequirements {
 
 
     public static void main(String[] args) {
-      Library JJsLibrary = new Library(new Hashtable<>(), "456 Elm St", 3); // Create a new Library object
+      Library JJsLibrary = new Library(new Hashtable<>(), "456 Elm St", 3, "JJsLibrary"); // Create a new Library object
       // Create a collection of books
       JJsLibrary.addTitle("The Great Gatsby by F. Scott Fitzgerald"); // Add a title to the collection
       JJsLibrary.addTitle("To Kill a Mockingbird by Harper Lee"); // Add another title to the collection

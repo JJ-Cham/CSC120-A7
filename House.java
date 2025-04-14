@@ -15,8 +15,8 @@ public class House extends Building implements HouseRequirements {
    * @param floors The number of floors in the house.
    * @param hasDiningRoom True if the house has a dining room, false otherwise.
    */
-  public House(String address, int floors, boolean hasDiningRoom) {
-    super("myHouse",address, floors); // Call the constructor of the Building class
+  public House(String name, String address, int floors, ArrayList<String> residents, boolean hasDiningRoom) {
+    super(name ,address, floors); // Call the constructor of the Building class
     this.residents = new ArrayList<>();
     this.hasDiningRoom = hasDiningRoom; 
     System.out.println("You have built a house: 🏠");
