@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class House extends Building implements HouseRequirements {
 
   // Attributes
-  private ArrayList<Student> residents;
+  private ArrayList<String> residents; 
   private boolean hasDiningRoom;
 
   // Constructor
